@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <style>
+            .img1 {
+                display:flex;
+                
+                
+            }
+            .img2{
+                display: flex;
+                margin-top:70px;
+            }
+            .img1 .des{
+                margin-left:350;
+                color:white;
+                z-index:1;
+                opacity:0;
+                animation-name:tharun2;
+                animation-duration:2s;
+                animation-delay:1s;
+                animation-fill-mode: forwards;
+               
+            }
+           @keyframes tharun2 {
+            100%{
+                opacity:1;
+            };
+            
+           }
+            .img2 .des{
+                margin-left: 370px;
+                color:white;
+                z-index:1;
+
+            }
+            .shana {
+                background-color:lightblue;
+                width:100;
+                animation-name:tharun;
+                animation-duration:3s;
+                animation-timing-function:ease-in-out;
+                animation-fill-mode: forwards;
+                
+            
+                
+                
+                
+                
+
+                
+            }
+            .shana2 {
+                background-color:lightblue;
+                width:100;
+                animation-name:tharun;
+                animation-duration:3s;
+                animation-timing-function:ease-in-out;
+                animation-fill-mode: forwards;
+                animation-timeline: view();
+                animation-range: entry 50px;
+                opacity:0;
+                animation-fill-mode: forwards;
+                
+                
+                
+
+                
+            }
+            @keyframes tharun {
+                30%{
+                    opacity:0.3;
+                    background-color:black;
+                }
+                40%{
+                    opacity:1;
+                   background-color:gold;
+                   width:400px;
+                }
+                100%{
+                    opacity:1;
+                    
+                    width:350;
+                    
+                }
+                
+            }
+            video{
+                position: absolute;
+                margin-top:0px;
+                margin-left:200px;
+                left:450;
+               
+                width:800;
+                height:390;
+            }
+            .gt{
+                position: absolute;
+                margin-top:0px;
+                margin-left:20px;
+                left:0;
+               
+                width:800;
+                height:390;
+
+            }
+            a{
+    margin-top:200;
+    display:inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    width:200px;
+    background-color:aliceblue;
+    color:black;
+    box-shadow:2px 2px 5px gray;
+    
+   
+}
+body{
+    opacity:0.3;
+    animation-name:usst;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+}
+@keyframes usst {
+    100%{
+        opacity:1;
+    }
+    
+}
+        
+        </style>
+    
+
+    </head>
+    <body>
+        <center><div class="logp">
+            <img src="./royal.logo.jpg" width="200px">
+           
+        </div></center>
+        <div class="img1">
+            <div class="shana">
+            <img src="https://www.royalenfield.com/content/dam/royal-enfield/hunter-350/studio-shots/new/dapper-grey.png" width="700">
+            </div>
+           <div class="des">
+            <h1>Hunter</h2>
+                <h2>price:<del>1.6 lakhs</del> <mark>1.2lakhs</mark></h2>
+        
+                </div>
+                <div>
+                    <video src="./hunter.mp4" width="400" controls autoplay>
+
+                    </video>
+                </div>
+                
+        </div>
+        <br/>
+        <br/>
+        <div class="img2">
+            <div class="shana2">
+            <img src="https://www.royalenfield.com/content/dam/royal-enfield/united-kingdom/motorcycles/continental-gt/colours/studio-shots/new/mr-clean/side-view.png" width="650">
+            </div>
+           <div class="des">
+            <h1>GT 650</h2>
+                <h2>price:<del>4.0 lakhs</del> <mark>3.7lakhs</mark></h2>
+        
+                </div>
+                <div class="gt">
+                    <video src="./gt.mp4" width="450" controls autoplay>
+
+                    </video>
+                </div>
+                
+        </div>
+        <center><a href="./bikemain.html"><h3>back</h4></a></center>
+
+
+    </body>
+</html>
